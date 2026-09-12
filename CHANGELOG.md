@@ -3,6 +3,14 @@
 Semua perubahan penting pada aplikasi didokumentasikan di file ini.
 Format mengikuti [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.5.2] — 2026-09-12
+
+### ✨ Added
+- Opsi frame rate **60 fps** di Pengaturan (15/24/30/60) — dilengkapi pengingat memakai Kualitas Sedang/Tinggi agar bitrate cukup.
+
+### 📝 Note
+- Default frame rate untuk instalasi baru sudah **30 fps** sejak 0.5.1; pengaturan yang sudah tersimpan di browser tidak berubah otomatis.
+
 ## [0.5.1] — 2026-09-12
 
 ### 🐛 Fixed
