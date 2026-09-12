@@ -2,7 +2,7 @@
 
 Extension browser (Chrome / Edge / Brave) untuk **screenshot & rekam layar** — potong area tertentu, blur info sensitif, coretan & teks, sampai capture **full page**. Semua diproses 100% lokal, tanpa watermark.
 
-**Versi:** lihat file [`VERSION`](./VERSION) · **Update:** extension memeriksa repo ini secara otomatis (tiap 12 jam + saat browser dibuka) · **📖 Panduan lengkap:** [`docs/PANDUAN.md`](docs/PANDUAN.md) · **📜 Riwayat versi:** [`docs/CHANGELOG.md`](docs/CHANGELOG.md)
+**Versi:** lihat file [`VERSION`](./VERSION) · **Update:** extension memeriksa repo ini secara otomatis (tiap 12 jam + saat browser dibuka) · **📖 Panduan lengkap:** [`docs/PANDUAN.md`](docs/PANDUAN.md) · **📜 Riwayat versi:** [`CHANGELOG.md`](CHANGELOG.md)
 
 ## ✨ Fitur
 
