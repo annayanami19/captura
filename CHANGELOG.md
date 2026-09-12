@@ -3,6 +3,11 @@
 Semua perubahan penting pada aplikasi didokumentasikan di file ini.
 Format mengikuti [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.3.1] — 2026-09-12
+
+### 🐛 Fixed
+- **Screenshot mode Area menampilkan gambar penuh di editor** — seleksi rect dari overlay tidak pernah diteruskan ke editor (`region` selalu null), sehingga hasil tampil/simpan penuh alih-alih sesuai area yang dipilih. Kini seleksi area menjadi potongan awal di editor (tetap bisa digeser/di-resize), termasuk penyesuaian koordinat saat scrollbar halaman dibuang dari hasil.
+
 ## [0.3.0] — 2026-09-12
 
 ### ✨ Added
