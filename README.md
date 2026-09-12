@@ -1,6 +1,6 @@
 # 📸🎥 Captura
 
-Extension browser (Chrome / Edge / Brave) untuk **screenshot & rekam layar** — potong area tertentu, blur info sensitif, coretan & teks, sampai capture **full page**. Semua diproses 100% lokal, tanpa watermark.
+Extension browser (Chrome / Edge / Brave) untuk **screenshot & rekam layar** — potong area tertentu, blur info sensitif, coretan & teks, sampai capture **full page**. Semua diproses 100% lokal.
 
 **Versi:** lihat file [`VERSION`](./VERSION) · **Update:** extension memeriksa repo ini secara otomatis (tiap 12 jam + saat browser dibuka) · **📖 Panduan lengkap:** [`docs/PANDUAN.md`](docs/PANDUAN.md) · **📜 Riwayat versi:** [`CHANGELOG.md`](CHANGELOG.md)
 
@@ -10,7 +10,8 @@ Extension browser (Chrome / Edge / Brave) untuk **screenshot & rekam layar** —
 - 🎥 **Rekam layar** — jendela/tab/layar, area kustom ✂️, blur/mosaik ▓ titik sensitif, pause/resume
 - 🎬 **Format output pilihan** — MP4 (default, kompatibel & seekable) atau WebM
 - 🔊 **Audio opsional** — microphone, audio sistem/tab, atau keduanya
-- 🖌️ **Editor screenshot** — zoom 25%–400%, coretan multi-warna, potong area, **📋 Copy ke clipboard**, **💾 Simpan PNG**
+- 🖌️ **Editor screenshot** — zoom 25%–400%, coretan multi-warna, potong area, **🏷️ watermark bebas diedit**, **📋 Copy ke clipboard**, **💾 Simpan PNG**
+- 🏷️ **Watermark opsional** — tanda tangan teks atau gambar di hasil kerjamu: **video** (khusus teks, diatur sebelum mulai rekam dengan pratinjau langsung, ter-bake permanen ke hasil) dan **screenshot** (muncul setelah capture, bebas diedit sampai disimpan)
 - 🛟 **Draf otomatis** — hasil editan tersimpan sementara & bisa dipulihkan
 - ⚙️ **Pengaturan lengkap** — tersimpan lokal, sinkron antar jendela, bisa di-export/import (backup JSON)
 - 📁 **Lokasi penyimpanan pilihan** — simpan langsung ke folder pilihanmu tanpa dialog
@@ -29,12 +30,12 @@ Extension browser (Chrome / Edge / Brave) untuk **screenshot & rekam layar** —
 
 **📸 Screenshot**
 - Dari popup: pilih **🖥️ Penuh**, **📄 Full Page**, **⬚ Area**, atau **✏️ Bebas** → editor langsung terbuka.
-- Edit: ✂️ potong area, ▓ blur/mosaik, ✏️ coretan, zoom 🔍± / Ctrl+scroll.
+- Edit: ✂️ potong area, ▓ blur/mosaik, ✏️ coretan, 🏷️ watermark, zoom 🔍± / Ctrl+scroll.
 - **💾 Simpan PNG** atau **📋 Copy** ke clipboard.
 
 **🎥 Rekam layar**
 - Klik **Buka Jendela Rekam** (atau `Alt+Shift+R`) → pilih sumber → **⏺ Mulai Rekam**.
-- Atur **✂️ area** dan **▓ blur** sebelum/di tengah rekaman → **⏹ Selesai & Simpan** (.webm).
+- Atur **🏷️ watermark teks** sebelum mulai (ada pratinjau), **✂️ area** dan **▓ blur** sebelum/di tengah rekaman → **⏹ Selesai & Simpan** (MP4/WebM).
 
 ## 🔄 Update
 

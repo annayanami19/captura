@@ -15,11 +15,12 @@ Panduan penggunaan extension **Captura** — screen recorder berbasis Chromium (
 5. [Blur Titik Tertentu (▓)](#5-blur-titik-tertentu-)
 6. [Audio (🎤/🔊)](#6-audio-)
 7. [Screenshot (📸)](#7-screenshot-)
-8. [Menyimpan Hasil](#8-menyimpan-hasil)
-9. [Halaman Pengaturan](#9-halaman-pengaturan)
-10. [Update Aplikasi](#10-update-aplikasi)
-11. [Shortcut & Indikator](#11-shortcut--indikator)
-12. [Tips & Solusi Masalah](#12-tips--solusi-masalah)
+8. [Watermark (🏷️)](#8-watermark-️)
+9. [Menyimpan Hasil](#9-menyimpan-hasil)
+10. [Halaman Pengaturan](#10-halaman-pengaturan)
+11. [Update Aplikasi](#11-update-aplikasi)
+12. [Shortcut & Indikator](#12-shortcut--indikator)
+13. [Tips & Solusi Masalah](#13-tips--solusi-masalah)
 
 ---
 
@@ -53,7 +54,7 @@ Output rekaman berupa **WebM (VP9)** yang bisa diputar di semua browser modern d
 2. Panel awal menampilkan ringkasan pengaturan aktif (chips). Ubah lewat **⚙️ Kelola / Pengaturan** bila perlu.
 3. Klik **⏺ Pilih Sumber & Mulai** → picker Chrome muncul (langsung terbuka pada jenis sumber default: Jendela/Tab/Layar).
 4. Pilih sumber → preview live tampil di jendela recorder.
-5. (Opsional) Atur **area** dan **blur** — lihat bab 4 & 5.
+5. (Opsional) Atur **area**, **blur**, dan **🏷️ watermark** — lihat bab 4, 5 & 8.
 6. Klik **⏺ Mulai Rekam**. Timer & estimasi ukuran file mulai berjalan; badge **REC** merah menyala di toolbar.
 7. Selesai → **⏹ Selesai & Simpan**.
 
@@ -118,6 +119,7 @@ Jendela editor selalu muncul **di sisi kanan layar** dan hanya tampil **setelah*
 - **✂️ Area** — batasi hasil pada kotak yang digambar (bisa digeser/resize, klik → 🗑 Hapus)
 - **▓ Blur** — sensor blur/mosaik, bisa diganti efek & dihapus
 - **✏️ Coret** — gambar garis bebas; **warna & ketebalan** di panel kanan
+- **🏷️ Watermark** — teks/gambar penanda di panel kanan; bebas diedit setelah capture, ikut ter-bake saat simpan/copy (lihat bab 8)
 - **🅣 Teks** — *segera hadir (sedang dikembangkan)*
 - **🔍 Zoom** — tombol 🔍− / persen / 🔍+ di toolbar, atau **Ctrl + scroll** di atas gambar (default **25%**, 25%–400%) — berguna saat hasil kekecilan
 - **↩ Undo** membatalkan aksi terakhir, **🧹 Bersihkan** menghapus semua anotasi
@@ -129,7 +131,48 @@ Klik **💾 Simpan PNG** saat sudah pas, **📋 Copy** untuk menyalin hasil terk
 
 **Scrollbar otomatis dibuang** — hasil screenshot tab tidak menyertakan scrollbar browser (kanan & bawah ter-crop otomatis).
 
-## 8. Menyimpan Hasil
+## 8. Watermark (🏷️)
+
+Tanda tangan visual di hasil kerjamu — nama, logo, atau teks apa saja. Aturannya berbeda untuk video dan screenshot:
+
+| Alur | Kapan diatur | Jenis | Bisa diedit? |
+|---|---|---|---|
+| 🎥 Video rekaman | **Sebelum** mulai merekam (panel awal) | 📝 Teks saja | ❌ Ter-bake permanen — tidak bisa diubah saat/sesudah merekam |
+| 📸 Screenshot | **Setelah** screenshot berhasil (editor) | 📝 Teks / 🖼️ Gambar | ✅ Bebas diedit sampai disimpan/dicopy |
+
+### 8.1 Di video rekaman
+
+1. Di panel awal jendela rekam, buka section **🏷️ Watermark**.
+2. Aktifkan toggle lalu atur desainnya — hanya **teks** untuk video — sambil melihat **pratinjau langsung** di atas contoh frame 16:9 (pratinjau redup selama watermark nonaktif).
+3. Klik **⏺ Pilih Sumber & Mulai** → preview video menampilkan watermark **persis seperti hasilnya** (WYSIWYG; otomatis mengikuti ✂️ area bila dipasang).
+4. Klik **⏺ Mulai Rekam** → konfigurasi di-*freeze* dan watermark **ter-bake permanen ke setiap frame**.
+
+⚠️ Berbeda dari blur ▓ yang tetap bisa diubah di tengah sesi, watermark tidak bisa diubah begitu rekaman berjalan — begitu juga hasil videonya. Rencanakan sebelum menekan Mulai Rekam.
+
+### 8.2 Di screenshot
+
+1. Ambil screenshot seperti biasa → editor terbuka.
+2. Buka panel **🏷️ Watermark** di kolom kanan (baru muncul setelah screenshot berhasil), aktifkan → watermark **langsung tampil di preview**, lalu atur sesukamu — **bebas diubah kapan saja**.
+3. **💾 Simpan PNG** / **📋 Copy** → watermark ikut ter-bake di hasil akhir (paling atas, mengikuti potongan ✂️/bebas).
+4. Watermark ikut dalam **🛟 draf otomatis** — pulih bersama anotasi lainnya.
+
+### 8.3 Mode teks (bebas atur)
+
+- **Teks** — bebas, multi-baris
+- **Jenis huruf** — Modern, Serif, Mono, Impact, Tulisan
+- **Ukuran** — slider **persen dari tinggi hasil** (2%–20%)
+- **Gaya** — **B** tebal, *I* miring, <u>U</u> garis bawah
+- **Warna teks & background** — klik swatch; tombol **Tanpa bg** menghilangkan kotak background
+- **Opasitas** — background & teks, dalam persen
+- **Posisi** — grid 9 arah (pojok, tengah tepi, tengah)
+
+### 8.4 Mode gambar (khusus screenshot — letak & ukuran saja)
+
+- **📁 Pilih Gambar…** — PNG/JPG/WEBP/GIF; **🗑 Hapus gambar** untuk mengganti
+- **Ukuran gambar** — slider **persen dari lebar hasil** (5%–60%)
+- **Posisi** — grid 9 arah yang sama; tanpa opsi warna/opasitas (gambar dipasang apa adanya)
+
+## 9. Menyimpan Hasil
 
 Setelah **⏹ Selesai & Simpan**, layar hasil menampilkan:
 
@@ -142,7 +185,7 @@ Setelah **⏹ Selesai & Simpan**, layar hasil menampilkan:
 
 **Proteksi kehilangan:** selama ada sesi berjalan atau hasil yang belum disimpan, klik **X** (menutup jendela) akan memunculkan dialog konfirmasi bawaan browser terlebih dahulu.
 
-## 9. Halaman Pengaturan
+## 10. Halaman Pengaturan
 
 Buka lewat **⚙️** di popup, **⚙️ Kelola / Pengaturan** di jendela recorder, atau `chrome://extensions` → Captura → Details → Extension options.
 
@@ -161,7 +204,7 @@ Halaman pengaturan terdiri dari **tiga kolom**: kiri **rekam video** (Captura), 
 
 Semua perubahan **tersimpan otomatis** di penyimpanan lokal browser (`chrome.storage.local`) — persisten walau browser/komputer dimatikan, dan tersinkron langsung antar halaman tanpa reload.
 
-## 10. Update Aplikasi
+## 11. Update Aplikasi
 
 1. Isi repo GitHub di **⚙️ Pengaturan → Update Otomatis** (format `username/nama-repo`).
 2. Extension mengecek file `VERSION` di repo **tiap 12 jam + saat browser dibuka** (atau klik *Cek Update Sekarang*).
@@ -169,7 +212,7 @@ Semua perubahan **tersimpan otomatis** di penyimpanan lokal browser (`chrome.sto
 4. Klik **⬇ Lihat Update** → unduh dari halaman Releases → ekstrak menggantikan folder lama → reload extension.
 5. Klik **✕** di banner untuk mengabaikan versi tertentu.
 
-## 11. Shortcut & Indikator
+## 12. Shortcut & Indikator
 
 | Item | Arti |
 |---|---|
@@ -178,7 +221,7 @@ Semua perubahan **tersimpan otomatis** di penyimpanan lokal browser (`chrome.sto
 | Badge 🟠 **NEW** | Update tersedia |
 | Chips di panel awal | Ringkasan pengaturan aktif |
 
-## 12. Tips & Solusi Masalah
+## 13. Tips & Solusi Masalah
 
 | Masalah | Solusi |
 |---|---|

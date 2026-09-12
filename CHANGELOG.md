@@ -3,6 +3,14 @@
 Semua perubahan penting pada aplikasi didokumentasikan di file ini.
 Format mengikuti [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.6.0] — 2026-09-13
+
+### ✨ Added
+- **Watermark video (🏷️)** — section baru di jendela rekam untuk mengatur watermark **sebelum** mulai merekam, khusus **teks** (mode gambar tidak tersedia untuk video), lengkap dengan **pratinjau langsung** di atas contoh frame 16:9. Begitu **⏺ Mulai Rekam** ditekan, konfigurasi di-*freeze* dan watermark **ter-bake permanen ke setiap frame** — tidak bisa diubah saat merekam maupun sesudahnya. Preview WYSIWYG juga tampil di atas preview video (mengikuti ✂️ area bila dipasang).
+- **Watermark screenshot (🏷️)** — panel *Watermark* di editor screenshot yang muncul **setelah screenshot berhasil** (teks atau gambar upload); begitu diaktifkan, watermark **langsung tampil di preview** dan bebas diedit sampai 💾 Simpan / 📋 Copy — ikut potongan & anotasi terkini serta 🛟 draf otomatis.
+- **Mode teks** — teks multi-baris, 5 jenis huruf, **ukuran berbasis persen** (slider % tinggi hasil), gaya **B / I / U** (tebal, miring, garis bawah), warna teks & background, opasitas background + teks (persen), 9 posisi (grid pojok/tengah).
+- **Mode gambar** (khusus screenshot) — upload PNG/JPG/WEBP/GIF; cukup atur **letak & ukuran** (slider % lebar hasil) — tanpa opsi warna/opasitas, sesuai kebutuhan watermark.
+
 ## [0.5.2] — 2026-09-12
 
 ### ✨ Added
