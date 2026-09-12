@@ -11,7 +11,9 @@ Extension browser (Chrome / Edge / Brave) untuk **screenshot & rekam layar** —
 - 🔊 **Audio opsional** — microphone, audio sistem/tab, atau keduanya
 - 🖌️ **Editor screenshot** — zoom 25%–400%, coretan multi-warna, potong area, **📋 Copy ke clipboard**, **💾 Simpan PNG**
 - 🛟 **Draf otomatis** — hasil editan tersimpan sementara & bisa dipulihkan
-- ⚙️ **Pengaturan lengkap** — tersimpan lokal, sinkron antar jendela
+- ⚙️ **Pengaturan lengkap** — tersimpan lokal, sinkron antar jendela, bisa di-export/import (backup JSON)
+- 📁 **Lokasi penyimpanan pilihan** — simpan langsung ke folder pilihanmu tanpa dialog
+- 🖱️ **Kursor bisa disembunyikan** dari hasil rekaman video (default aktif)
 - 🔄 **Cek update otomatis** dari repo ini — bisa diaktifkan/dimatikan di Pengaturan (default nonaktif)
 
 ## 📥 Instalasi

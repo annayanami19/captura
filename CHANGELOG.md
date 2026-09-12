@@ -3,6 +3,13 @@
 Semua perubahan penting pada aplikasi didokumentasikan di file ini.
 Format mengikuti [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.4.0] — 2026-09-12
+
+### ✨ Added
+- **Lokasi penyimpanan** — pilih folder tujuan lewat ⚙️ Pengaturan → Lokasi Penyimpanan. File video & screenshot bisa ditulis langsung ke folder pilihan tanpa dialog Save As (File System Access API, handle tersimpan di IndexedDB; otomatis fallback ke dialog bila izin tidak berlaku).
+- **Backup & pulihkan pengaturan** — Export semua preferensi ke file JSON dan Import untuk memulihkannya (⚙️ Pengaturan → Backup Pengaturan).
+- **Sembunyikan kursor di hasil rekaman video** — toggle di ⚙️ Pengaturan → Rekam Video (default **aktif**), memakai constraint `cursor: 'never'` Screen Capture API; otomatis diabaikan bila browser/OS tidak mendukung.
+
 ## [0.3.2] — 2026-09-12
 
 ### 🔄 Changed
