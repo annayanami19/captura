@@ -13,7 +13,7 @@ Extension browser (Chrome / Edge / Brave) untuk **screenshot & rekam layar** —
 - 🛟 **Draf otomatis** — hasil editan tersimpan sementara & bisa dipulihkan
 - ⚙️ **Pengaturan lengkap** — tersimpan lokal, sinkron antar jendela, bisa di-export/import (backup JSON)
 - 📁 **Lokasi penyimpanan pilihan** — simpan langsung ke folder pilihanmu tanpa dialog
-- 🖱️ **Kursor bisa disembunyikan** dari hasil rekaman video (default aktif)
+- 🖱️ **Kursor bisa disembunyikan** dari hasil rekaman video (default nonaktif; butuh dukungan browser — Chromium saat ini belum mendukung, pengaturan disimpan untuk ke depannya)
 - 🔄 **Cek update otomatis** dari repo ini — bisa diaktifkan/dimatikan di Pengaturan (default nonaktif)
 
 ## 📥 Instalasi

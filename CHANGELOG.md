@@ -3,6 +3,15 @@
 Semua perubahan penting pada aplikasi didokumentasikan di file ini.
 Format mengikuti [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.4.1] — 2026-09-12
+
+### 🐛 Fixed
+- **Rekaman menghasilkan file 0 MB** — panggilan `applyConstraints` pada track capture layar membuat track berhenti mengirim frame sehingga rekaman otomatis selesai tanpa data. Pendekatan itu dihapus seluruhnya.
+
+### 🔄 Changed
+- Default **"Sembunyikan kursor di video"** kini **nonaktif**.
+- Fitur sembunyikan kursor kini memakai constraint `cursor: 'never'` hanya bila browser benar-benar mendukung (dicek via `getSupportedConstraints`). Chromium saat ini belum mengimplementasikannya ([issue #394133543](https://issues.chromium.org/issues/394133543)) — kursor tetap terekam, dan halaman Pengaturan menampilkan peringatan bila fitur diaktifkan di browser yang belum mendukung. Pengaturan tersimpan & otomatis berfungsi saat Chromium mendukung.
+
 ## [0.4.0] — 2026-09-12
 
 ### ✨ Added
