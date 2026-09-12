@@ -7,7 +7,8 @@ Extension browser (Chrome / Edge / Brave) untuk **screenshot & rekam layar** —
 ## ✨ Fitur
 
 - 🖥️ **Screenshot 4 mode** — Penuh, **Full Page** (seluruh tinggi halaman, otomatis), **Area** (drag kotak), **Bebas** (bentuk bebas) — langsung tanpa picker
-- 🎥 **Rekam layar** — jendela/tab/layar, area kustom ✂️, blur/mosaik ▓ titik sensitif, pause/resume, output **WebM**
+- 🎥 **Rekam layar** — jendela/tab/layar, area kustom ✂️, blur/mosaik ▓ titik sensitif, pause/resume
+- 🎬 **Format output pilihan** — MP4 (default, kompatibel & seekable) atau WebM
 - 🔊 **Audio opsional** — microphone, audio sistem/tab, atau keduanya
 - 🖌️ **Editor screenshot** — zoom 25%–400%, coretan multi-warna, potong area, **📋 Copy ke clipboard**, **💾 Simpan PNG**
 - 🛟 **Draf otomatis** — hasil editan tersimpan sementara & bisa dipulihkan

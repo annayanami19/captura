@@ -3,6 +3,17 @@
 Semua perubahan penting pada aplikasi didokumentasikan di file ini.
 Format mengikuti [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.5.0] — 2026-09-12
+
+### ✨ Added
+- **Pilihan format output video** di ⚙️ Pengaturan → Rekam Video:
+  - **MP4** (default, disarankan) — H.264/AAC via muxer MP4 MediaRecorder (Chrome 126+); hasil langsung seekable & kompatibel di semua player.
+  - **WebM** (VP9/VP8 + Opus) — file cenderung lebih kecil; otomatis fallback ke format lain bila browser tidak mendukung.
+  - MKV tidak tersedia karena MediaRecorder di semua browser tidak memiliki muxer Matroska.
+
+### 🐛 Fixed
+- **Preview hasil rekaman tidak bisa di-seek** — WebM dari MediaRecorder tidak menyimpan durasi & indeks Cues sehingga bar playback mati. Preview kini memicu pemindaian durasi otomatis (seek dipaksa ke akhir lalu kembali ke awal) sehingga bisa ditarik. Untuk file yang seekable secara native, pilih format MP4.
+
 ## [0.4.1] — 2026-09-12
 
 ### 🐛 Fixed
