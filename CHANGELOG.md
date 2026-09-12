@@ -3,6 +3,11 @@
 Semua perubahan penting pada aplikasi didokumentasikan di file ini.
 Format mengikuti [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.3.2] — 2026-09-12
+
+### 🔄 Changed
+- **Screenshot mode Area kini langsung terpotong di editor** — editor terbuka sudah menampilkan hasil area terpilih saja (bukan gambar penuh dengan kotak area lagi). Kotak area yang tampak di 0.3.1 diganti: potongan diterapkan langsung ke kanvas sebelum masuk editor. Crop manual dengan ✂️ tetap tersedia.
+
 ## [0.3.1] — 2026-09-12
 
 ### 🐛 Fixed
