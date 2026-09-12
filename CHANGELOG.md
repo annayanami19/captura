@@ -3,6 +3,14 @@
 Semua perubahan penting pada aplikasi didokumentasikan di file ini.
 Format mengikuti [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.5.1] — 2026-09-12
+
+### 🐛 Fixed
+- **Video MP4 hasil rekaman terlihat patah-patah/lompat-lompat** — captureStream dengan fps eksplisit hanya mengambil frame saat canvas digambar rAF (interval tak beraturan / VFR), dan muxer MP4 sensitif terhadap itu. Kini perekaman memakai laju frame **konstan**: `captureStream(0)` + `requestFrame()` berkala via timer, sehingga timing frame stabil untuk muxer MP4 (WebM juga ikut lebih halus).
+
+### 🔄 Changed
+- Default **frame rate 15 → 30 fps** untuk instalasi baru (pengaturan yang sudah tersimpan tidak berubah — naikkan manual ke 24/30 bila hasil masih terasa patah).
+
 ## [0.5.0] — 2026-09-12
 
 ### ✨ Added
