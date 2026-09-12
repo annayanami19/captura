@@ -12,7 +12,7 @@ Extension browser (Chrome / Edge / Brave) untuk **screenshot & rekam layar** —
 - 🖌️ **Editor screenshot** — zoom 25%–400%, coretan multi-warna, potong area, **📋 Copy ke clipboard**, **💾 Simpan PNG**
 - 🛟 **Draf otomatis** — hasil editan tersimpan sementara & bisa dipulihkan
 - ⚙️ **Pengaturan lengkap** — tersimpan lokal, sinkron antar jendela
-- 🔄 **Cek update otomatis** dari repo ini
+- 🔄 **Cek update otomatis** dari repo ini — bisa diaktifkan/dimatikan di Pengaturan (default nonaktif)
 
 ## 📥 Instalasi
 
@@ -35,4 +35,4 @@ Extension browser (Chrome / Edge / Brave) untuk **screenshot & rekam layar** —
 
 ## 🔄 Update
 
-Extension mengecek repo ini secara otomatis (tiap 12 jam + saat browser dibuka). Saat ada versi baru: unduh dari **Releases**, ganti isi folder, klik 🔄 di `chrome://extensions`.
+Extension bisa mengecek repo ini secara otomatis (tiap 12 jam + saat browser dibuka) — aktifkan lewat **⚙️ Pengaturan → Update Otomatis → Aktifkan pemeriksaan otomatis**, isi repo tempat aplikasi di-upload (format `username/nama-repo`). Saat ada versi baru: badge NEW muncul di toolbar + banner di jendela recorder → unduh dari **Releases**, ganti isi folder, klik 🔄 di `chrome://extensions`.
