@@ -3,6 +3,22 @@
 Semua perubahan penting pada aplikasi didokumentasikan di file ini.
 Format mengikuti [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.11.0] — 2026-09-14
+
+### ✨ Added
+- **🎥 Webcam (camera bubble)** — wajah ikut terekam bersama layar: bubble kamera tampil di atas rekaman dan **ter-bake permanen** ke video hasil (MP4 & WebM).
+  - **Bentuk**: *Bubble* (lingkaran), *Kotak* (persegi bersudut membulat), atau *Full* — mode Full hanya untuk pratinjau besar di panel sumber; sesi tidak bisa dimulai selama masih Full (wajib pilih Bubble/Kotak dulu).
+  - **Bebas digeser & di-resize langsung di preview** — bahkan **selama rekaman berjalan**; posisi & ukuran dijamin identik antara preview dan hasil (WYSIWYG).
+  - **Mirror & ring** — wajah tidak tampil terbalik dan bingkai putih tipis, keduanya bisa dimatikan; ukuran awal pilihan Kecil/Sedang/Besar.
+  - **Pratinjau live di panel sumber** — kartu pratinjau webcam mengikuti bentuk & mirror pilihan; izin kamera diminta di sini sehingga saat merekam sudah tidak ada prompt.
+  - Aman saat kamera bermasalah: izin ditolak / kamera tidak ada → rekaman tetap jalan normal dengan status "🎥 Kamera tidak aktif" di bar info preview, dan lampu kamera selalu mati otomatis begitu sesi selesai.
+
+### 🔄 Changed
+- **Editor screenshot 3 kolom** — card **📖 Panduan Cepat** pindah ke kolom ketiga (sejajar panel Hasil), halaman dilebarkan; di **halaman utama screenshot** kolom panel & panduan disembunyikan sehingga hanya menu sumber yang tampil, dan muncul kembali saat editor terbuka.
+
+### 🐛 Fixed
+- **Blur kini bisa digambar di dalam kotak area** — sebelumnya tarikan blur di dalam ✂️ area justru memindahkan area, jadi area harus dikecilkan dulu. (Editor screenshot sudah benar sejak awal; kini editor rekam mengikuti.)
+
 
 
 ## [0.6.0] — 2026-09-13

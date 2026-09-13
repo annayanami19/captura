@@ -55,11 +55,23 @@ Output rekaman berupa **WebM (VP9)** yang bisa diputar di semua browser modern d
 2. Panel awal menampilkan ringkasan pengaturan aktif (chips). Ubah lewat **⚙️ Kelola / Pengaturan** bila perlu.
 3. Klik **⏺ Pilih Sumber & Mulai** → picker Chrome muncul (langsung terbuka pada jenis sumber default: Jendela/Tab/Layar).
 4. Pilih sumber → preview live tampil di jendela recorder.
-5. (Opsional) Atur **area**, **blur**, dan **🏷️ watermark** — lihat bab 4, 5 & 9.
+5. (Opsional) Atur **area**, **blur**, **🎥 webcam** dan **🏷️ watermark** — lihat bab 4, 5 & 9 (webcam: sub-bab di bawah).
 6. Klik **⏺ Mulai Rekam**. Timer & estimasi ukuran file mulai berjalan; badge **REC** merah menyala di toolbar.
 7. Selesai → **⏹ Selesai & Simpan**.
 
 **Kontrol di tengah sesi:** ⏸ Jeda / ▶ Lanjut / ⏹ Selesai & Simpan / 🗑 Buang (buang sesi, ada konfirmasi).
+
+### Webcam (🎥)
+
+Wajahmu bisa ikut terekam bersama layar sebagai **bubble kamera** ala video kreator:
+
+1. Di panel awal, buka **🎥 Webcam** → aktifkan **Aktifkan webcam** → izinkan akses kamera saat Chrome bertanya. Pratinjau live langsung tampil di kartu.
+2. Pilih **Bentuk**: *Bubble* (lingkaran), *Kotak* (persegi bersudut membulat), atau *Full* (kamera memenuhi kotak pratinjau — hanya untuk pratinjau; sesi tidak bisa dimulai selama masih Full, pilih Bubble/Kotak dulu).
+3. Atur **Ukuran** (Kecil/Sedang/Besar) dan **Cermin (mirror)** — wajah tidak tampil terbalik secara default; ring putih di tepi bubble juga bisa dimatikan.
+4. Setelah mulai merekam, bubble tampil di atas preview: **drag** badannya untuk memindahkan, **drag titik kanan-bawah** untuk mengubah ukuran — bisa dilakukan bahkan selama rekaman berjalan.
+5. Bubble **ter-bake permanen** ke video hasil, dengan posisi & ukuran persis seperti di preview.
+
+> Kamera tidak tersedia / izinnya ditolak? Rekaman tetap jalan normal — bar di bawah preview menampilkan status "🎥 Kamera tidak aktif", dan lampu kamera selalu mati otomatis begitu sesi selesai.
 
 ## 4. Area Recording (✂️)
 
