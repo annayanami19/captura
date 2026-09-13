@@ -3,6 +3,8 @@
 Semua perubahan penting pada aplikasi didokumentasikan di file ini.
 Format mengikuti [Keep a Changelog](https://keepachangelog.com/).
 
+
+
 ## [0.6.0] — 2026-09-13
 
 ### ✨ Added

@@ -15,6 +15,7 @@ Panduan penggunaan extension **Captura** — screen recorder berbasis Chromium (
 5. [Blur Titik Tertentu (▓)](#5-blur-titik-tertentu-)
 6. [Audio (🎤/🔊)](#6-audio-)
 7. [Screenshot (📸)](#7-screenshot-)
+
 8. [Watermark (🏷️)](#8-watermark-️)
 9. [Menyimpan Hasil](#9-menyimpan-hasil)
 10. [Halaman Pengaturan](#10-halaman-pengaturan)
@@ -54,7 +55,7 @@ Output rekaman berupa **WebM (VP9)** yang bisa diputar di semua browser modern d
 2. Panel awal menampilkan ringkasan pengaturan aktif (chips). Ubah lewat **⚙️ Kelola / Pengaturan** bila perlu.
 3. Klik **⏺ Pilih Sumber & Mulai** → picker Chrome muncul (langsung terbuka pada jenis sumber default: Jendela/Tab/Layar).
 4. Pilih sumber → preview live tampil di jendela recorder.
-5. (Opsional) Atur **area**, **blur**, dan **🏷️ watermark** — lihat bab 4, 5 & 8.
+5. (Opsional) Atur **area**, **blur**, dan **🏷️ watermark** — lihat bab 4, 5 & 9.
 6. Klik **⏺ Mulai Rekam**. Timer & estimasi ukuran file mulai berjalan; badge **REC** merah menyala di toolbar.
 7. Selesai → **⏹ Selesai & Simpan**.
 
@@ -100,6 +101,8 @@ Di **⚙️ Pengaturan → Audio**:
 
 Saat memulai, pastikan checkbox **Share audio** tercentang di picker Chrome (untuk audio sistem; di Windows). Kalau mic tidak terdeteksi, cek izin mikrofon browser & aplikasi.
 
+
+
 ## 7. Screenshot (📸)
 
 Selain merekam video, Captura bisa mengambil **screenshot** lengkap dengan anotasi. Ada **3 mode** yang bisa langsung dipilih dari popup — tanpa picker — plus mode layar/jendela:
@@ -130,6 +133,8 @@ Klik **💾 Simpan PNG** saat sudah pas, **📋 Copy** untuk menyalin hasil terk
 **🛟 Draf otomatis** — setiap perubahan otomatis tersimpan sementara. Kalau jendela tertutup tanpa sengaja, buka 📸 Screenshot berikutnya dan klik **Pulihkan** pada banner yang muncul — frame beserta semua anotasinya kembali.
 
 **Scrollbar otomatis dibuang** — hasil screenshot tab tidak menyertakan scrollbar browser (kanan & bawah ter-crop otomatis).
+
+
 
 ## 8. Watermark (🏷️)
 
@@ -196,6 +201,7 @@ Buka lewat **⚙️** di popup, **⚙️ Kelola / Pengaturan** di jendela record
 | 📸 Screenshot | Opsi **tampilkan penuh layar saat screenshot berhasil** (jendela editor otomatis maximized, kembali kecil saat kembali ke menu) |
 | 🔊 Audio | Microphone, audio sistem/tab |
 | 🔄 Update Otomatis | Repo GitHub untuk cek update + cek manual |
+
 | 🐞 Debug Log | Log aktivitas & error, **tab terpisah** per fitur, checkbox rekam on/off (**default nonaktif**), tersimpan lokal (maks. 200 entri per fitur) |
 
 Halaman pengaturan terdiri dari **tiga kolom**: kiri **rekam video** (Captura), tengah **panduan cepat**, kanan **pengaturan screenshot** — kolom tengah & kanan sticky mengikuti scroll.
@@ -217,6 +223,7 @@ Semua perubahan **tersimpan otomatis** di penyimpanan lokal browser (`chrome.sto
 | Item | Arti |
 |---|---|
 | `Alt+Shift+R` | Buka/fokus jendela recorder |
+
 | Badge 🔴 **REC** | Sedang merekam |
 | Badge 🟠 **NEW** | Update tersedia |
 | Chips di panel awal | Ringkasan pengaturan aktif |
@@ -226,10 +233,11 @@ Semua perubahan **tersimpan otomatis** di penyimpanan lokal browser (`chrome.sto
 | Masalah | Solusi |
 |---|---|
 | Picker tidak muncul | Pastikan klik **⏺ Pilih Sumber & Mulai** (picker butuh interaksi). Tutup picker lama yang masih terbuka. |
-| Rekaman tidak bersuara | Cek toggle audio di Pengaturan & centang *Share audio* di picker. Untuk mic, cek izin mikrofon. |
+| Rekaman tidak bersuara | Cek toggle audio di Pengaturan & centang *Share audio* di picker. Untuk mic, cek izin mikrofon.  |
 | Jendela recorder ikut terekam | Gunakan mode **✂️ Area**, atau pindahkan jendela recorder keluar area yang direkam. |
 | Titik blur bergeser | Blur mengikuti frame — jangan resize/move window sumber di tengah rekaman. |
 | Hasil video hitam/kosong | Sumber berhenti di tengah sesi (mis. tab ditutup). Mulai sesi baru. |
+
 | Update tidak terdeteksi | Pastikan format repo `username/nama-repo` benar & file `VERSION` ada di branch default repo. |
 | Pengaturan hilang | Pastikan tidak menghapus data situs extension (chrome://extensions → Remove menghapus semuanya). |
 
