@@ -3,6 +3,23 @@
 Semua perubahan penting pada aplikasi didokumentasikan di file ini.
 Format mengikuti [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.12.0] — 2026-09-14
+
+### ✨ Added
+- **🅣 Teks di editor screenshot** — klik posisi, ketik, **Enter** simpan (**Shift+Enter** baris baru, **Escape** batal, tombol ✓ Simpan / ✕ Batal). Teks bisa dipindah, di-resize (pegangan sisi = atur lebar, pegangan sudut = **skala bebas dua sumbu** — kata-kata mengikuti kotak), diedit ulang lewat klik dua kali / ✏️ Edit, dan dihapus. Ukuran font **per-teks** (stepper A−/A+ + ketik persen manual 1–100%), slider ukuran default teks baru 1–100% di panel.
+- **◇ Shapes ala Snipping Tool** — emoji 🙂 (12 pilihan), persegi ▭, elips ◯, garis ╱, dan panah ↗ dengan opsi **isi (fill)**; warna & tebal outline memakai panel Alat Gambar. Garis/panah punya **dua titik ujung** yang bisa ditarik bebas untuk **memutar arah** (panah ke kanan bisa diubah jadi ke kiri). Semua shape bisa dipindah, di-resize, dihapus, di-undo, dan ikut draft pemulihan; tetap di alat ◇ untuk menggambar berturut-turut.
+- **🗂️ Multi-sesi screenshot** — tiap capture membuka jendela editor sendiri; screenshot di halaman lain **tidak lagi menimpa** sesi yang sedang terbuka. Retake & panel capture tetap pulang ke jendelanya sendiri; draft pemulihan juga per-sesi.
+- **🧭 Pengaturan sesi screenshot** (Pengaturan → Screenshot) — pilih **Timpa sesi aktif** (default) atau **Sesi baru**; saat menimpa bisa dipilih **Langsung timpa** (default) atau **Tanya dulu** (dialog peringatan bila sesi belum disimpan; sesi kosong otomatis diterima).
+- **🔍 Debug Log yang benar-benar merekam** — level **error & warning kini selalu terekam** apa pun togglenya (kapasitas 500 entri); error tak tertangani di semua halaman ikut tertangkap; kegagalan MediaRecorder di tengah rekaman dan sumber layar yang mendadak berakhir juga tercatat. Toggle Debug Log kini berarti mode verbose (mencatat pula langkah sukses).
+
+### 🔄 Changed
+- **📄 Full Page dirombak ke scroll-and-stitch ala FireShot** — capture per layar lalu dijahit jadi satu gambar, **tanpa debugger**: layout tampil persis seperti aslinya, scroll halaman tersentuh minimal (posisi awal dipulihkan), banner "debugging" tidak muncul lagi, kuota capture browser aman lewat pacing + auto-retry, dan lazy-load tetap terkejar per layar. Halaman internal browser (chrome://) kini diarahkan ke mode Penuh.
+- **Editor screenshot** — scrollbar hasil jahitan dibuang otomatis; tinggi halaman diukur ulang saat lazy-load menambah konten.
+
+### 🐛 Fixed
+- **Status "MEREKAM" tidak lagi nyangkut** saat jendela perekam ditutup paksa di tengah sesi — badge & status popup kini otomatis diakhiri.
+- **Halaman extension yang yatim pasca reload** (popup, editor, pengaturan) kini pulih sendiri — tanpa error "Extension context invalidated" / "No SW" memenuhi konsol; overlay seleksi membersihkan diri sendiri.
+
 ## [0.11.0] — 2026-09-14
 
 ### ✨ Added

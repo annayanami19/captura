@@ -122,12 +122,12 @@ Selain merekam video, Captura bisa mengambil **screenshot** lengkap dengan anota
 | Mode | Cara kerja |
 |---|---|
 | 🖥️ **Penuh** | Langsung capture seluruh halaman tab aktif (viewport) → editor terbuka |
-| 📄 **Full Page** | Capture **seluruh tinggi halaman** — di-scroll otomatis via debugger protocol, hasil satu gambar panjang → editor terbuka. Banner "debugging" muncul sesaat saat proses, lalu hilang otomatis. Halaman super panjang (>16.000px) dipotong di batas tersebut; hasil >9 MB otomatis dikompres JPEG |
+| 📄 **Full Page** | Capture **seluruh tinggi halaman** — halaman di-scroll otomatis per layar lalu hasilnya **dijahit** jadi satu gambar panjang → editor terbuka. Lazy-load ikut termuat selama proses; posisi scroll kamu dipulihkan. Halaman super panjang (>16.000px) dipotong di batas tersebut; hasil besar otomatis dikompres JPEG. Halaman internal browser (chrome://) tidak didukung — gunakan mode Penuh |
 | ⬚ **Area** | Halaman ditutupi frame — drag kotak di posisi yang diinginkan → editor terbuka |
 | ✏️ **Bebas** | Gambar bentuk bebas (lasso) di halaman → editor terbuka dengan potongan sesuai bentuk |
 | 🖼️ **Layar / Jendela** | Klik tombol di jendela screenshot → picker Chrome → pilih layar/jendela → langsung masuk editor |
 
-Jendela editor selalu muncul **di sisi kanan layar** dan hanya tampil **setelah** screenshot diambil.
+Jendela editor selalu muncul **di sisi kanan layar** dan hanya tampil **setelah** screenshot diambil. Secara bawaan semua screenshot masuk ke **jendela editor yang sama** (menimpa sesi sebelumnya); lewat **Pengaturan → Screenshot** bisa diganti ke **Sesi baru** (tiap screenshot membuka jendela sendiri) dan opsi **Tanya dulu** (peringatan sebelum menimpa sesi yang belum disimpan).
 
 ### Mengedit hasil
 
@@ -135,7 +135,8 @@ Jendela editor selalu muncul **di sisi kanan layar** dan hanya tampil **setelah*
 - **▓ Blur** — sensor blur/mosaik, bisa diganti efek & dihapus
 - **✏️ Coret** — gambar garis bebas; **warna & ketebalan** di panel kanan
 - **🏷️ Watermark** — teks/gambar penanda di panel kanan; bebas diedit setelah capture, ikut ter-bake saat simpan/copy (lihat bab 8)
-- **🅣 Teks** — *segera hadir (sedang dikembangkan)*
+- **🅣 Teks** — klik posisi lalu ketik; **Enter** simpan, **Shift+Enter** baris baru, **Escape** batal (tersedia tombol **✓ Simpan / ✕ Batal**). Teks terseleksi bisa **digeser**, **di-resize** (pegangan sisi = atur lebar, pegangan sudut ungu = skala bebas — kata-kata mengikuti kotak), **diedit ulang** (klik dua kali / ✏️ Edit), dan dihapus. Ukuran font **per-teks** lewat A−/A+ atau ketik persen (1–100%); slider ukuran di panel kanan untuk **teks baru**
+- **◇ Bentuk** — emoji 🙂 (12 pilihan), persegi ▭, elips ◯, garis ╱, dan panah ↗; opsi **Isi/Tanpa isi** untuk persegi & elips; warna & tebal mengikuti panel kiri. Klik shape tempelan untuk memindah/mengubah ukuran; **garis & panah punya dua titik ujung** — tarik salah satunya untuk memutar arah bebas. Tetap di alat ◇ untuk menggambar berturut-turut
 - **🔍 Zoom** — tombol 🔍− / persen / 🔍+ di toolbar, atau **Ctrl + scroll** di atas gambar (default **25%**, 25%–400%) — berguna saat hasil kekecilan
 - **↩ Undo** membatalkan aksi terakhir, **🧹 Bersihkan** menghapus semua anotasi
 - Potongan bebas bisa dihapus lewat tautan **🗑 hapus** di bawah preview
